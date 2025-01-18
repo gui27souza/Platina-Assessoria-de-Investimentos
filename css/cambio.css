@@ -148,13 +148,33 @@
     
         background-color: aliceblue;
         color: #000000;
+
+        border: 3px solid aliceblue;
+
+        transition: all ease .3s;
     }
     
+    .cambio-item:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+
+        background-color: unset;
+        color: aliceblue;
+        box-shadow: 0 0 0 #000;
+    }
+
     .cambio-item-icon {
         width: 4rem;
     }
     
     .cambio-item-icon img {
+        filter: 
+            drop-shadow(1px 1px aliceblue) 
+            drop-shadow(-1px 1px aliceblue)
+            drop-shadow(1px -1px aliceblue) 
+            drop-shadow(-1px -1px aliceblue)
+        ;
+
         height: 100%;
         width: 100%;
     }
