@@ -173,14 +173,22 @@
 
         margin: 0 3rem;
         overflow: hidden;
+
+        transition: max-width ease-in-out .3s, padding ease-in-out .3s;
     }
     
+    .nav-wrapper:hover {
+        max-width: 133rem;
+        padding: 0 0.5rem .5rem;
+    }
+
     .nav {
         display: flex;
         flex-flow: row;
         width: 100%;
         height: 8rem;
     }
+    
 
     .nav-logo {
         all: unset;
@@ -217,6 +225,22 @@
 
     .nav-links_left li div{
         font-size: 1.4rem;
+        position: relative;
+        display: inline;
+    }
+
+    .nav-links_left li div::after {
+        content: "";
+        display: block;
+        background-color: #000000;
+        width: 10px;
+        height: 1px;
+
+        transition: width ease .3s;
+    }
+
+    .nav-links_left li div:hover::after {
+        width: 100%;
     }
 
     .nav-links_right {
@@ -227,10 +251,17 @@
         padding-right: 2rem;
     }
     
-    .nav-links_right li a{
+    .nav-links_right li a {
         font-size: 1.4rem;
         background-color: #23304b;
         padding: 1.4rem;
         border-radius: .5rem;
+        border: 2px solid #23304b;
+    }
+
+    .nav-links_right li a:hover {
+        transform: scale(1.1);
+        background-color: aliceblue;
+        color: black;
     }
 }
