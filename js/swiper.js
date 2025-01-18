@@ -8,7 +8,7 @@ var swiper = new Swiper(".swiper-investimentos", {
     autoplay: {
         delay: 8376
     }
-});
+})
   
 var swiper = new Swiper(".swiper-cambio-1", {
     effect: "slide",
@@ -20,7 +20,7 @@ var swiper = new Swiper(".swiper-cambio-1", {
     autoplay: {
         delay: 5269
     }
-});
+})
   
 var swiper = new Swiper(".swiper-cambio-2", {
     effect: "slide",
@@ -32,5 +32,5 @@ var swiper = new Swiper(".swiper-cambio-2", {
     autoplay: {
         delay: 2327
     }
-});
+})
   

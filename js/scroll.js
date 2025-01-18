@@ -13,7 +13,4 @@ function scrollNavTo(element, addtional_scroll=0) {
         top: offsetPosition,
         behavior: 'smooth',
     })
-
-    console.log(`Scroll to ${targetId}: Adjusted by ${nav_height}px`)
-    
 }

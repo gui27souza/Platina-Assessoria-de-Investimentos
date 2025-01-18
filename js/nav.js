@@ -1,5 +1,3 @@
-// Script que implementa um menu de hamburguer para a header em caso de telas menores
-
 const collapse_button = document.getElementById('collapse-button')
 const header_nav = document.getElementById('nav-links')
 const menu_animation = document.getElementById('collapse-button-animation')
