@@ -95,6 +95,7 @@
         font-size: clamp(1.1rem, 2vw, 2rem);
         text-align: justify;
         hyphens: auto;
+        text-indent: 8rem;
     }
     
     .sobre-nos-links {

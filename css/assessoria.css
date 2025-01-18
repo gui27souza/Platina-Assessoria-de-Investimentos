@@ -180,7 +180,7 @@
         display: inline-block;
         font-size: clamp(1.1rem, 2vw, 1.8rem);
         margin: .6rem 1rem;
-        
+        text-indent: 4rem;
     }
     
     .assessoria-links {
