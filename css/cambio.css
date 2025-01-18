@@ -1,0 +1,187 @@
+.cambio-wrapper {
+        
+    width: 100%;
+
+    background-color: #0b0031;
+    background-image: 
+        radial-gradient(circle at -95% -50%, #00000000 46%, transparent 46.05%),
+        radial-gradient(circle at 29% -32%, #00000021 51%, transparent 51.05%),
+        radial-gradient(circle at -31% 24%, #0000002f 56%, transparent 56.05%),
+        linear-gradient(-61deg, #0000004e 37%, transparent 37.05%)
+    ;
+
+    color: aliceblue;
+
+    border-bottom: .6rem ridge black;
+
+    overflow-x: hidden;
+}
+
+.cambio {
+    max-width: 120rem;
+    margin: auto;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.cambio-subtitle {
+    font-size: 1.4rem;
+    padding-left: .6rem;
+}
+
+.cambio-container {
+    display: none;
+}
+
+.cambio-item {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    grid-template-rows: 6rem 1fr ;
+    justify-content: space-between;
+    gap: .8rem;
+
+    padding: 1.6rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 0 1rem aliceblue;
+
+    background-color: aliceblue;
+    color: #000000;
+}
+
+.cambio-item-icon {
+    width: 2rem;
+}
+
+.cambio-item-icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.cambio-item h2 {
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cambio-item p {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    hyphens: auto;
+}
+
+.cambio-links {
+    align-self: center;
+    margin-top: 1.6rem;
+}
+
+.cambio-links a {
+    background-color: aliceblue;
+    color: black;
+}
+
+@media screen and (min-width: 1279px) {
+
+    .cambio-wrapper {
+        
+        width: 100%;
+    
+        background-color: #0b0031;
+        background-image: 
+            radial-gradient(circle at -95% -50%, #00000000 46%, transparent 46.05%),
+            radial-gradient(circle at 29% -32%, #00000021 51%, transparent 51.05%),
+            radial-gradient(circle at -31% 24%, #0000002f 56%, transparent 56.05%),
+            linear-gradient(-61deg, #0000004e 37%, transparent 37.05%)
+        ;
+    
+        color: aliceblue;
+    
+        border-bottom: .6rem ridge black;
+    }
+    
+    .cambio {
+        max-width: 120rem;
+        margin: auto;
+    
+        padding: 2rem;
+    
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+    }
+    
+    .cambio-subtitle {
+        font-size: clamp(1.1rem, 2vw, 2rem);
+        padding-left: 1rem;
+    }
+    
+    .cambio-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+        gap: 3rem;
+        justify-content: center;
+    
+        padding: 0 1rem;
+    }
+    
+    .cambio-item {
+        display: grid;
+        grid-template-columns: 6rem 1fr;
+        grid-template-rows: 6rem 1fr ;
+        justify-content: space-between;
+        gap: .8rem;
+    
+        padding: 1.6rem;
+    
+        border-radius: 1rem;
+    
+        box-shadow: 0 0 1rem aliceblue;
+    
+        background-color: aliceblue;
+        color: #000000;
+    }
+    
+    .cambio-item-icon {
+        width: 4rem;
+    }
+    
+    .cambio-item-icon img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .cambio-item h2 {
+        font-size: clamp(1.1rem, 2vw, 2rem);
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .cambio-item p {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        hyphens: auto;
+    }
+    
+    .cambio-links {
+        align-self: center;
+        margin-top: 1.6rem;
+    }
+    
+    .cambio-links a {
+        background-color: aliceblue;
+        color: black;
+    }
+
+}
