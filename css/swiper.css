@@ -27,7 +27,6 @@
     z-index: 3;
     transform: scale(1);
 }
-  
 
 @media screen and (min-width:1279px) {
     .swiper {
