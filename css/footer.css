@@ -1,0 +1,186 @@
+.footer-wrapper {
+    width: 100%;
+    
+    background-color: #bce0ff;
+    background-image: 
+        radial-gradient(circle at -81% -9%, #0000000e 60%, transparent 60.05%),
+        radial-gradient(circle at 2% -31%, #00000028 50%, transparent 60.05%),
+        radial-gradient(circle at -74% 40%, #00000014 54%, transparent 57.05%),
+        linear-gradient(17deg, #00000025 58%, transparent 58.05%)
+    ;
+    background-attachment: fixed;
+    filter: drop-shadow(0 0 1rem black);
+
+    max-width: 120rem;
+}
+
+.footer {
+    height: 100%;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    font-size: clamp(1rem, 2vw, 1.6rem);
+}
+
+.footer > * {
+    width: 100%;
+}
+
+.footer-subtitle,
+.footer-text {
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.footer-info > * {
+    display: flex;
+    width: 100%;
+}
+
+.footer-endereco {
+    display: flex;
+    flex-flow: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.footer-endereco-text {
+    display: flex;
+}
+
+.footer-endereco iframe {
+    width: 90%;
+
+    border-radius: 2rem;
+    
+    box-shadow: 0 0 1rem black;
+}
+
+.footer-cnpj {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-ouvidoria {
+    display: flex;
+    flex-flow: column;
+}
+.footer-ouvidoria > * {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-disclaimer {
+    font-size: .6rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media screen and (min-width: 1279px) {
+
+    .footer-wrapper {
+        width: 100%;
+        
+        background-color: #bce0ff;
+        background-image: 
+            radial-gradient(circle at -81% -9%, #0000000e 60%, transparent 60.05%),
+            radial-gradient(circle at 2% -31%, #00000028 50%, transparent 60.05%),
+            radial-gradient(circle at -74% 40%, #00000014 54%, transparent 57.05%),
+            linear-gradient(17deg, #00000025 58%, transparent 58.05%)
+        ;
+        background-attachment: fixed;
+        filter: drop-shadow(0 0 1rem black);
+    
+        max-width: 120rem;
+    
+        margin-top: 4rem;
+        border-radius: 2rem 2rem 0 0;
+    
+    }
+    
+    .footer {
+        height: 100%;
+    
+        padding: 2rem;
+    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    
+        gap: 2rem;
+    
+        font-size: clamp(1rem, 2vw, 1.6rem);
+    }
+    
+    .footer > * {
+        width: 100%;
+    }
+    
+    .footer-subtitle,
+    .footer-text {
+        text-align: center;
+    }
+    
+    .footer-info {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    
+    .footer-info > * {
+        display: flex;
+        width: 35%;
+    }
+    
+    .footer-endereco {
+        display: flex;
+        flex-flow: column;
+        row-gap: 2rem;
+        align-items: center;
+    }
+    
+    .footer-endereco-text {
+        display: flex;
+    }
+    
+    .footer-endereco iframe {
+        width: 70%;
+    
+        border-radius: 2rem;
+        
+        box-shadow: 0 0 1rem black;
+    }
+    
+    .footer-cnpj {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-ouvidoria {
+        display: flex;
+        flex-flow: column;
+    }
+    .footer-ouvidoria > * {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-disclaimer {
+        font-size: 1rem;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+}
