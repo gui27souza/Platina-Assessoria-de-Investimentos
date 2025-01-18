@@ -142,6 +142,19 @@
     
         display: flex;
         flex-flow: column;
+
+        border: 3px solid aliceblue;
+
+        transition: all ease .3s;
+    }
+
+    .investimentos-item:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+
+        background-color: unset;
+        color: aliceblue;
+        box-shadow: 0 0 0 #000;
     }
 
     .investimentos-item h2 {
@@ -155,7 +168,7 @@
         justify-content: center;
         align-items: center;
 
-        padding: 1.2rem 1.2rem 0;
+        padding: 1.6rem 1.2rem 0;
     }
     .investimentos-item p {
         height: 70%;
