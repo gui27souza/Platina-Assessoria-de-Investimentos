@@ -1,0 +1,190 @@
+.assessoria-wrapper {
+    max-width: 120rem;
+    width: 100%;
+
+    background-color: #f0f8ff;
+    background-image: 
+        radial-gradient(circle at -64% -7%, #00000013 54%, transparent 54.05%),
+        radial-gradient(circle at 92% 60%, #00000013 52%, transparent 52.05%),
+        radial-gradient(circle at -87% 37%, #00000013 46%, transparent 46.05%),
+        linear-gradient(17deg, #00000015 51%, transparent 51.05%)
+    ;
+    background-attachment: fixed;
+
+    filter: drop-shadow(0 0 1rem black);
+}
+
+.assessoria {
+    height: 100%;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column;
+
+    gap: 1rem;
+}
+
+
+.assessoria-title {
+    font-size: clamp(1.4rem, 2vw, 2.4rem);
+}
+
+.assessoria-subtitle {
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    padding-left: .6rem;
+}
+
+.assessoria-container {
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0 .6rem;
+
+    margin: 1rem 0;
+
+    padding: 0 .6rem;
+}
+
+.assessoria-item {
+    padding-bottom: 1rem;
+}
+
+.assessoria-item h2 {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.534);
+}
+
+.assessoria-item:nth-of-type(8) {
+    padding-bottom: 0;
+}
+
+.assessoria-item:nth-of-type(8) h2{
+    border-bottom: none;
+}
+
+.assessoria-item span {
+    display: inline-block;
+    font-size: 1rem;
+    margin: .6rem 0 .6rem 1rem;
+    line-height: .9;
+
+    text-align: justify;
+    hyphens: auto;
+
+    display: none;
+}
+
+.assessoria-links {
+    align-self: center;
+}
+
+@media screen and (min-width: 1279px) {
+
+    .assessoria-wrapper {
+        max-width: 120rem;
+
+        height: 820px;
+    
+        background-color: #f0f8ff;
+        background-image: 
+            radial-gradient(circle at -64% -7%, #00000013 54%, transparent 54.05%),
+            radial-gradient(circle at 92% 60%, #00000013 52%, transparent 52.05%),
+            radial-gradient(circle at -87% 37%, #00000013 46%, transparent 46.05%),
+            linear-gradient(17deg, #00000015 51%, transparent 51.05%)
+        ;
+        background-attachment: fixed;
+    
+        filter: drop-shadow(0 0 1rem black);
+    
+        margin-top: 2rem;
+    
+        border-radius: 2rem;
+    }
+    
+    .assessoria {
+        height: 100%;
+    
+        padding: 2rem;
+    
+        display: flex;
+        flex-flow: column;
+    
+        gap: 1rem;
+    }
+    
+    
+    .assessoria-title {
+        font-size: clamp(1.4rem, 2vw, 2.4rem);
+    }
+    
+    .assessoria-subtitle {
+        font-size: clamp(1.1rem, 2vw, 2rem);
+        padding-left: 1rem;
+    }
+    
+    .assessoria-container {
+        flex-grow: 1;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0 1rem;
+    
+        margin: 1rem 0;
+    
+        padding: 0 2rem;
+    }
+    
+    .assessoria-item {
+        padding-bottom: 1rem;
+    }
+
+    .assessoria-item:nth-of-type(1),
+    .assessoria-item:nth-of-type(2),
+    .assessoria-item:nth-of-type(3),
+    .assessoria-item:nth-of-type(4) {
+        padding-right: 1rem;
+        border-right: 2px solid black;
+
+    }
+    .assessoria-item:nth-of-type(5),
+    .assessoria-item:nth-of-type(6),
+    .assessoria-item:nth-of-type(7),
+    .assessoria-item:nth-of-type(8) {
+        padding-left: 1rem;
+    }
+    .assessoria-item:nth-of-type(1) {grid-area: 1 / 1 / 2 / 2;}
+    .assessoria-item:nth-of-type(2) {grid-area: 2 / 1 / 3 / 2;}
+    .assessoria-item:nth-of-type(3) {grid-area: 3 / 1 / 4 / 2;}
+    .assessoria-item:nth-of-type(4) {grid-area: 4 / 1 / 5 / 2;}
+    .assessoria-item:nth-of-type(5) {grid-area: 1 / 2 / 2 / 3;}
+    .assessoria-item:nth-of-type(6) {grid-area: 2 / 2 / 3 / 3;}
+    .assessoria-item:nth-of-type(7) {grid-area: 3 / 2 / 4 / 3;}
+    .assessoria-item:nth-of-type(8) {grid-area: 4 / 2 / 5 / 3;}
+    
+    .assessoria-item h2 {
+        display: inline-block;
+        font-size: clamp(1.1rem, 2vw, 2rem);
+        font-weight: 600;
+        text-align: left;
+        border-bottom: none;
+    }
+    
+    .assessoria-item span {
+        display: inline-block;
+        font-size: clamp(1.1rem, 2vw, 1.8rem);
+        margin: .6rem 1rem;
+        
+    }
+    
+    .assessoria-links {
+        align-self: center;
+    }
+
+}
