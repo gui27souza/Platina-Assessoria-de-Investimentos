@@ -20,7 +20,9 @@
         radial-gradient(circle at 1% 51%, #0000001e 29%, transparent 34.05%)
     ;
 
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 0 0;
 }
 
 .main-title {
