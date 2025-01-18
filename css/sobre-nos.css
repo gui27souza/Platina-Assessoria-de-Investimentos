@@ -1,0 +1,109 @@
+.sobre-nos-wrapper {
+    width: 100%;
+
+    background-color: #1a3266;
+
+    background-color: #23304b;
+    background-image: 
+        radial-gradient(circle at -90% 100%, #00000029 42%, transparent 42.05%),
+        radial-gradient(circle at 0% -32%, #0000000e 45%, transparent 45.05%),
+        linear-gradient(-296deg, #00000018 44%, transparent 44.05%)
+    ;
+
+    border-top: .6rem ridge aliceblue;
+    border-bottom: .6rem ridge #f0f8ff;
+    color: aliceblue;
+}
+
+.sobre-nos {
+    padding: 2rem;
+
+    max-width: 120rem;
+    margin: auto;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    gap: 1rem;
+
+}
+
+.sobre-nos-container {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.sobre-nos-item {
+    font-size: 1rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.sobre-nos-links {
+    align-self: center;
+}
+
+.sobre-nos-links a {
+    background-color: aliceblue;
+    color: black;
+}
+
+@media screen and (min-width: 1279px) {
+
+    .sobre-nos-wrapper {
+        width: 100%;
+    
+        background-color: #1a3266;
+    
+        background-color: #23304b;
+        background-image: 
+            radial-gradient(circle at -90% 100%, #00000029 42%, transparent 42.05%),
+            radial-gradient(circle at 0% -32%, #0000000e 45%, transparent 45.05%),
+            linear-gradient(-296deg, #00000018 44%, transparent 44.05%)
+        ;
+    
+        border-top: .6rem ridge aliceblue;
+        border-bottom: .6rem ridge #f0f8ff;
+        color: aliceblue;
+        
+        height: 65rem;
+        
+        margin-top: 2rem;
+    }
+    
+    .sobre-nos {
+        padding: 2rem;
+    
+        max-width: 120rem;
+        margin: auto;
+        height: 100%;
+    
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    
+    .sobre-nos-container {
+        display: flex;
+        flex-flow: column;
+        gap: 6rem;
+    }
+    
+    .sobre-nos-item {
+        font-size: clamp(1.1rem, 2vw, 2rem);
+        text-align: justify;
+        hyphens: auto;
+    }
+    
+    .sobre-nos-links {
+        align-self: center;
+    }
+    
+    .sobre-nos-links a {
+        background-color: aliceblue;
+        color: black;
+    }
+
+}
