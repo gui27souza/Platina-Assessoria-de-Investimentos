@@ -104,7 +104,9 @@
     
         color: aliceblue;
     
-        border-bottom: .6rem ridge black;
+        border-bottom: none;
+
+        filter: drop-shadow(0 0 1rem black);
     }
     
     .cambio {
