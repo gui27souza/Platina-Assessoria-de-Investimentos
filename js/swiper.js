@@ -13,7 +13,7 @@ var swiper = new Swiper(".swiper-investimentos", {
     }
 })
   
-var swiper = new Swiper(".swiper-cambio-1", {
+var swiper = new Swiper(".swiper-cambio", {
     effect: "slide",
     grabCursor: true,
     centeredSlides: true,
@@ -22,21 +22,6 @@ var swiper = new Swiper(".swiper-cambio-1", {
     spaceBetween: 40,
     autoplay: {
         delay: 5269
-    },
-    pagination: {
-        el: ".swiper-pagination",
-    }
-})
-  
-var swiper = new Swiper(".swiper-cambio-2", {
-    effect: "slide",
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 40,
-    autoplay: {
-        delay: 2327
     },
     pagination: {
         el: ".swiper-pagination",
