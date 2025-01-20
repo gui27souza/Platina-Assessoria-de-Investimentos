@@ -1,6 +1,5 @@
 .main-wrapper {
     width: 100%;
-    max-width: 120rem;
 }
 
 .main {
@@ -20,8 +19,6 @@
         radial-gradient(circle at 1% 51%, #0000001e 29%, transparent 34.05%)
     ;
 
-    /* background-attachment: fixed; */
-    background-size: cover;
     background-position: 0 0;
 }
 
@@ -40,6 +37,8 @@
 
 .main-title h1 {
     width: min-content;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .main-subtitle {
@@ -67,14 +66,6 @@
     align-items: end;
 }
 
-.main-image img {
-    height: 100%;
-    width: 60%;
-    object-fit: cover;
-    object-position: bottom right;
-    
-}
-
 .main-links {
     grid-column: 1 / 2 ;
     grid-row: 3 / 4;
@@ -98,11 +89,8 @@
     
     .main-wrapper {
         width: 100%;
-        max-width: 120rem;
 
-        height: 55rem;
-
-        margin-top: 2rem;
+        height: 85vh;
 
         filter: drop-shadow(0 0 1rem black);
     }
@@ -112,17 +100,7 @@
 
         display: grid;
         grid-template-columns: 50% 50% ;
-        grid-template-rows: 70% 30%;
-
-        /* background-color: #0b0031;
-        background-image: 
-            radial-gradient(circle at 62% 39%, #00000020 50%, transparent 50.05%),
-            radial-gradient(circle at 20% -85%, #0000002e 42%, transparent 42.05%),
-            radial-gradient(circle at -54% 59%, #0000001f 49%, transparent 49.05%),
-            linear-gradient(297deg, #0000002d 50%, transparent 50.05%),
-            linear-gradient(0deg, #0000001e 50%, transparent 50.05%),
-            radial-gradient(circle at 1% 51%, #0000001e 29%, transparent 34.05%)
-        ; */
+        grid-template-rows: 85% 15%;
 
         background-color: #23304b;
         background-image: 
@@ -136,28 +114,17 @@
 
         background-attachment: fixed;
 
-        /* --s: 800px;
-        --c1: #04003d;
-        --c2: #172b54;
-        --c3: #030014;
-        background:
-            repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
-            calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
-            repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%)
-        ;
-        background-size: var(--s) calc(var(--s)*tan(30deg)); */
-        
-
-        border-radius: 2rem;
     }
 
     .main-title {
-        grid-column: 1 / 2 ;
+        grid-column: 1 / 3 ;
         grid-row: 1 / 2;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        justify-self: center;
 
         font-weight: 900;
         color: aliceblue;
@@ -165,30 +132,49 @@
     }
 
     .main-title h1 {
-        width: min-content;
+        width: 80%;
+        text-align: center;
+        font-size: clamp(6rem, 2vw, 8rem);
+        font-weight: 700;
+        align-self: left;
+
+        word-spacing: 0;
+
+        position: relative;
+        top: 5rem;
+
+        filter: 
+            drop-shadow(.4rem .4rem 0 rgb(41, 62, 100))
+            drop-shadow(0 0 1rem black)
+        ;
+
+        z-index: 2;
     }
 
     .main-subtitle {
-        grid-column: 1 / 2 ;
+        grid-column: 1 / 3 ;
         grid-row: 2 / 3;
-
-        font-size: 1.4rem;
+        background-color: aliceblue;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        z-index: 2;
+
+        filter: drop-shadow(0 0 1rem black);
     }
 
     .main-subtitle h2 {
-        background-color: aliceblue;
+        background-color: unset;
         padding: 1rem;
         border-radius: .5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
+
+        z-index: 2;
     }
 
     .main-image {
-        grid-column: 2 / 3 ;
-        grid-row: 1 / 3;
         border-radius: 2rem;
 
         width: 100%;
@@ -224,28 +210,8 @@
         ;
     }
 
-    .main-image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: bottom right;
-        
-    }
-
     .main-links {
-        grid-column: 2 / 3 ;
-        grid-row: 2 / 3;
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2.4rem;
+        display: none;
     }
 
-    .main-links a {
-        background-color: aliceblue;
-        color: black;
-        padding: 2rem;
-    }
 }
