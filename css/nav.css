@@ -1,49 +1,5 @@
-/* .nav-wrapper {
-    width: 100%;
-    max-width: 130rem;
-
-    background-color: #ffffff;
-    filter: drop-shadow(0 0 1rem black);
-
-    border-radius: 0 0 2rem 2rem;
-
-    position: sticky;
-    top: 0;
-    z-index: 2;
-} */
-
-/* .navbar {
-}
-
-.nav-logo {
-    width: 90%;
-}
-
-.navbar-nav {
-    gap: 2rem;
-    width: 100%;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-}
-
-.nav-item:nth-of-type(7) a,
-.nav-item:nth-of-type(8) a {
-    background-color: #23304b;
-    padding: 1rem;
-    color: aliceblue;
-    border-radius: .5rem;
-}
-
-.nav-link {
-    word-spacing: -4px;
-} */
-
 .nav-wrapper {
     width: 100%;
-    max-width: 130rem;
 
     background-color: #ffffff;
     filter: drop-shadow(0 0 1rem black);
@@ -80,8 +36,8 @@
 }
 
 .collapse-button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #0b0031;
+    color: #ffffff;
     width: 100%;
 
     font-size: clamp(1.6rem, 4vw, 2.2rem);
@@ -169,34 +125,37 @@
     }
 
     .nav-wrapper {
-        border-radius: 0 0 2rem 2rem;
-
-        margin: 0 3rem;
         overflow: hidden;
 
+        text-align: center;
+
         transition: max-width ease-in-out .3s, padding ease-in-out .3s;
+
+        position: fixed;
+        top: 0;
+        z-index: 5;
     }
     
     .nav-wrapper:hover {
-        max-width: 133rem;
-        padding: 0 0.5rem .5rem;
+        /* padding: 0 .5rem .5rem; */
     }
 
     .nav {
         display: flex;
         flex-flow: row;
         width: 100%;
-        height: 8rem;
     }
     
 
     .nav-logo {
         all: unset;
         height: 100%;
+        max-width: 600px;
 
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: .6rem;
     }
 
     .nav-links {
@@ -217,6 +176,8 @@
     
     .nav-links_left {
         all: unset;
+
+        padding-left: 2rem;
 
         display: flex;
         justify-content: space-around;
@@ -254,7 +215,7 @@
     .nav-links_right li a {
         font-size: 1.4rem;
         background-color: #23304b;
-        padding: 1.4rem;
+        padding: 1rem .6rem;
         border-radius: .5rem;
         border: 2px solid #23304b;
     }
