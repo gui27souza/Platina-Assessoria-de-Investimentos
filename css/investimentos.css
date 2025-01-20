@@ -99,10 +99,10 @@
         ;
         color: aliceblue;
     
-        border-top: .6rem ridge black;
-        border-bottom: .6rem ridge black;
-    
-        margin-top: 2rem;
+        border-top: none;
+        border-bottom: none;
+
+        filter: drop-shadow(0 0 1rem black);
     }
     
     .investimentos {
@@ -118,7 +118,7 @@
     }
     
     .investimentos-subtitle {
-        font-size: clamp(1.1rem, 2vw, 2rem);
+        font-size: 1.6rem;
         padding-left: 1rem;
     }
     
@@ -178,7 +178,7 @@
     }
     
     .investimentos-text {
-        font-size: clamp(1.1rem, 2vw, 2rem);
+        font-size: 1.6rem;
         padding-left: 1rem;
     }
     
