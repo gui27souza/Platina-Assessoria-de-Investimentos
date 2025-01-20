@@ -64,13 +64,9 @@
             linear-gradient(-296deg, #00000018 44%, transparent 44.05%)
         ;
     
-        border-top: .6rem ridge aliceblue;
-        border-bottom: .6rem ridge #f0f8ff;
+        border-top: none;
+        border-bottom: none;
         color: aliceblue;
-        
-        height: 65rem;
-        
-        margin-top: 2rem;
     }
     
     .sobre-nos {
@@ -85,17 +81,23 @@
         justify-content: space-between;
     }
     
+    .sobre-nos-title {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
     .sobre-nos-container {
         display: flex;
         flex-flow: column;
-        gap: 6rem;
+        gap: 4rem;
+
+        padding: 0 15rem;
     }
     
     .sobre-nos-item {
         font-size: clamp(1.1rem, 2vw, 2rem);
         text-align: justify;
         hyphens: auto;
-        text-indent: 8rem;
     }
     
     .sobre-nos-links {
