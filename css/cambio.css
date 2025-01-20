@@ -183,7 +183,7 @@
     }
     
     .cambio-item h2 {
-        font-size: clamp(1.1rem, 2vw, 2rem);
+        font-size: clamp(1.1rem, 2vw, 1.8rem);
         text-align: left;
         display: flex;
         justify-content: left;
