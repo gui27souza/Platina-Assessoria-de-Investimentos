@@ -21,10 +21,6 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-
-    background-image: url(../assets/images/body.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .nav-closer {
