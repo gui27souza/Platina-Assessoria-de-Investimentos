@@ -154,10 +154,6 @@
         max-width: 160rem;
     }
     
-    .cambio-title {
-        font-size: clamp(3.8rem, 2vw, 4.2rem);
-    }
-
     .cambio-subtitle {
         font-size: clamp(1.1rem, 2vw, 2rem);
         padding-left: 1rem;
@@ -166,7 +162,6 @@
     .cambio-container {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 2rem;
     
         justify-content: center;
     
@@ -220,7 +215,7 @@
     }
     
     .cambio-item h2 {
-        font-size: clamp(1.8rem, 1.5vw, 3rem);
+        font-size: clamp(1.1rem, 2vw, 1.8rem);
         align-self: center;
         text-align: left;
         display: flex;
@@ -231,7 +226,7 @@
     .cambio-item p {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
-        font-size: clamp(1.4rem, 1.1vw, 2.2rem);
+        font-size: clamp(1.1rem, 2vw, 1.6rem);
         hyphens: auto;
     }
     
