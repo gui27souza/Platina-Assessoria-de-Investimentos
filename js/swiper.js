@@ -6,7 +6,7 @@ var swiper = new Swiper(".swiper-investimentos", {
     slidesPerView: 1,
     spaceBetween: 40,
     autoplay: {
-        delay: 8376
+        delay: 2364
     },
     pagination: {
         el: ".swiper-pagination",
@@ -21,7 +21,7 @@ var swiper = new Swiper(".swiper-cambio", {
     slidesPerView: 1,
     spaceBetween: 40,
     autoplay: {
-        delay: 5269
+        delay: 2532
     },
     pagination: {
         el: ".swiper-pagination",
