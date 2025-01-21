@@ -55,13 +55,18 @@
         border-top: none;
     }
 
+    .sobre-nos {
+        gap: 2.4rem;
+    }
+
     .sobre-nos-title {
         text-align: center;
+        font-size: clamp(3.8rem, 2vw, 4.2rem);
     }
 
     .sobre-nos-container {
         gap: 3rem;
-        font-size: clamp(1.1rem, 2vw, 2.4rem);
+        font-size: clamp(3.2rem, 2vw, 3.8rem);
     }
     
     .sobre-nos-links {
