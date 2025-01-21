@@ -66,6 +66,15 @@ body {
 }
 
 @media screen and (min-width: 1279px) {
+
+    .main-wrapper,
+    .sobre-nos-wrapper,
+    .assessoria-wrapper,
+    .investimentos-wrapper,
+    .cambio-wrapper {
+        height: 100vh;
+        min-height: 85rem;
+    }
     
     .nav-closer {
         display: none;
