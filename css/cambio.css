@@ -37,6 +37,36 @@
     display: none;
 }
 
+.cambio .swiper {
+    width: 100%;
+    height: clamp(170px, 2vw, 300px);
+
+    padding: 0 3rem;
+    overflow: visible;
+}
+
+.cambio .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.5;
+
+    transform: scale(.8);
+}
+
+.cambio .swiper-slide > * {
+    height: 100%;
+}
+
+.cambio .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+}
+
 .cambio-item {
     display: grid;
     grid-template-columns: 6rem 1fr;
