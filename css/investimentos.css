@@ -10,10 +10,11 @@
     ;
     color: aliceblue;
 
-    border-top: .6rem ridge black;
-    border-bottom: .6rem ridge black;
-
+    filter: drop-shadow(0 0 1rem black);
+    
     overflow-x: hidden;
+
+    z-index: 1;
 }
 
 .investimentos {
@@ -30,8 +31,9 @@
 }
 
 .investimentos-subtitle {
-    font-size: clamp(1.1rem, 2vw, 2rem);
-    padding-left: 1rem;
+    font-size: clamp(1rem, 3.5vw, 1.8rem);
+    text-align: justify;
+    hyphens: auto;
 }
 
 .investimentos-container {
@@ -41,14 +43,16 @@
 .investimentos .swiper {
     width: 100%;
     height: clamp(170px, 2vw, 300px);
-
-    padding: 0 3rem;
+    
+    margin: 1rem 0;
+    padding: 0 1rem;
     overflow: visible;
 }
 
 .investimentos .swiper-slide {
     width: 100%;
     height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,16 +79,14 @@
     border: none;
     box-shadow: 0 0 1rem rgb(130, 187, 238);
 
-    border-radius: 1.6rem;
+    border-radius: 1rem;
 
     display: flex;
     flex-flow: column;
 }
 
 .investimentos-item h2 {
-    flex-grow: 1;
-    
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 4vw, 2.4rem);
     text-align: center;
     font-weight: bold;
 
@@ -92,18 +94,19 @@
     justify-content: center;
     align-items: center;
 
-    padding: 1.2rem 1.2rem 0;
+    padding: 1rem;
 }
 .investimentos-item p {
     height: 70%;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3.4vw, 2rem);
     text-align: center;
     padding: 1rem;
 }
 
 .investimentos-text {
-    font-size: clamp(1.1rem, 2vw, 2rem);
-    padding-left: 1rem;
+    font-size: clamp(1rem, 3.5vw, 1.8rem);
+    text-align: justify;
+    hyphens: auto;
 }
 
 .investimentos-links {
@@ -114,66 +117,43 @@
 .investimentos-links a {
     background-color: aliceblue;
     color: black;
+    font-size: clamp(1rem, 3.5vw, 1.8rem);
+}
+
+@media screen and (min-width: 769px) {
+    .investimentos .swiper {
+        display: none;
+    }
+
+    .investimentos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3rem;
+
+        margin: 2rem 0;
+    }
+
+    .investimentos-item h2 {
+        font-size: clamp(1.4rem, 2vw, 2rem);
+        height: 33%;
+    }
+
+    .investimentos-item p {
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
+        text-align: justify;
+        hyphens: auto;
+    }
 }
 
 @media screen and (min-width: 1279px) {
 
-    .investimentos-wrapper {
-        width: 100%;    
-    
-        background-color: #23304b;
-        background-image: 
-            radial-gradient(circle at -65% 97%, #00000017 58%, transparent 58.05%),
-            radial-gradient(circle at 88% -81%, #0000002e 52%, transparent 52.05%),
-            radial-gradient(circle at -63% 23%, #00000017 57%, transparent 57.05%),
-            linear-gradient(51deg, #00000021 50%, transparent 50.05%)
-        ;
-        color: aliceblue;
-    
-        border-top: none;
-        border-bottom: none;
-
-        filter: drop-shadow(0 0 1rem black);
-    }
-    
-    .investimentos {
-        margin: auto;
-        max-width: 120rem;
-        width: 100%;
-    
-        padding: 2rem;
-    
-        display: flex;
-        flex-flow: column;
-        gap: 1rem;
-    }
-    
-    .investimentos-subtitle {
-        font-size: 1.6rem;
-        padding-left: 1rem;
-    }
-    
     .investimentos-container {
-        display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
-    
-        font-size: clamp(1.1rem, 2vw, 1.6rem);
     }
     
     .investimentos-item {
-        background-color: aliceblue;
-        color: black;
-    
-        border: none;
-        box-shadow: 0 0 1rem rgb(130, 187, 238);
-    
-        border-radius: 1.6rem;
-    
-        display: flex;
-        flex-flow: column;
-
         border: 3px solid aliceblue;
 
         transition: all ease .3s;
@@ -189,28 +169,11 @@
     }
 
     .investimentos-item h2 {
-        flex-grow: 1;
-        
-        font-size: 1.8rem;
-        text-align: center;
-        font-weight: bold;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         padding: 1.6rem 1.2rem 0;
     }
     .investimentos-item p {
-        height: 70%;
-        font-size: 1.2rem;
-        text-align: center;
         padding: 1rem;
-    }
-    
-    .investimentos-text {
-        font-size: 1.6rem;
-        padding-left: 1rem;
+        text-align: center;
     }
     
     .investimentos-links {
