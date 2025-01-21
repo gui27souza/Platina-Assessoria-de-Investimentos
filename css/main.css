@@ -124,6 +124,8 @@
             drop-shadow(.4rem .4rem 0 rgb(41, 62, 100))
             drop-shadow(0 0 1rem black)
         ;
+
+        z-index: 3;
     }
 
     .main-subtitle {
