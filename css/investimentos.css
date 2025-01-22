@@ -148,14 +148,29 @@
 
 @media screen and (min-width: 1279px) {
 
+    .investimentos {
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .investimentos-title {
+        font-size: clamp(1.4rem, 1.5vw, 2.4rem);
+    }
+
+    .investimentos-subtitle,
+    .investimentos-text {
+        font-size: clamp(1.5rem, 1vw, 2rem);
+    }
+
     .investimentos-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
     }
     
     .investimentos-item {
         border: 3px solid aliceblue;
-
+        padding: 1.2rem;
         transition: all ease .3s;
     }
 
@@ -169,11 +184,13 @@
     }
 
     .investimentos-item h2 {
-        padding: 1.6rem 1.2rem 0;
+        font-size: clamp(1.6rem, 1vw, 1.8rem);
+        padding: 0;
     }
     .investimentos-item p {
-        padding: 1rem;
+        font-size: clamp(1.3rem, 1vw, 1.8rem);
         text-align: center;
+        padding: 0;
     }
     
     .investimentos-links {
@@ -182,8 +199,57 @@
     }
     
     .investimentos-links a {
+        font-size: clamp(1rem, 1vw, 1.6rem);
         background-color: aliceblue;
         color: black;
+    }
+
+}
+
+@media screen and (min-height: 864px) {
+
+    .investimentos-title {
+        font-size: clamp(1.4rem, 3vw, 3.8rem);
+    }
+    
+    .investimentos-subtitle, .investimentos-text {
+        font-size: clamp(1.1rem, 2.5vw, 2rem);
+    }
+    
+    .investimentos-container {
+        gap: 2.2rem;
+    }
+
+    .investimentos-item {
+        padding: 1.6rem;
+    }
+
+    .investimentos-item h2 {
+        font-size: clamp(1.1rem, 2.5vw, 2.4rem);
+    }
+    
+    .investimentos-item p {
+        margin-top: 1rem;
+        font-size: clamp(1.4rem, 2vw, 1.8rem);
+    }
+
+    .investimentos-links a {
+        font-size: clamp(1rem, 2vw, 2.4rem);
+    }
+}
+
+@media screen and (min-height: 961px) {
+
+    .investimentos-title {
+        font-size: clamp(1.4rem, 3vw, 4.4rem);
+    }
+
+    .investimentos-subtitle, .investimentos-text {
+        font-size: clamp(1.1rem, 2.5vw, 3rem);
+    }
+
+    .investimentos-container {
+        gap: 3rem;
     }
 
 }
