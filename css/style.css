@@ -76,14 +76,14 @@ body {
 
         display: inline-block;
 
-        font-size: clamp(.8rem, 2vw, 1.6rem);
+        font-size: clamp(1rem, .5vw, 1.6rem);
         text-decoration: none;
 
         color: aliceblue;
         background-color: #23304b;
         box-shadow: 0 0 3rem #5575b9;
 
-        padding: 2rem;
+        padding: clamp(1rem, 1vw, 2rem);
         border-radius: .3rem;
 
         transition: box-shadow ease .3s, transform ease .3s;
