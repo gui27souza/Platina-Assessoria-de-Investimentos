@@ -55,6 +55,11 @@
         border-top: none;
     }
 
+    .sobre-nos {
+        height: 100%;
+        justify-content: space-around;
+    }
+
     .sobre-nos-title {
         text-align: center;
     }
@@ -69,8 +74,39 @@
     }
     
     .sobre-nos-links a {
+        margin: 0;
+        font-size: clamp(1rem, 1vw, 1.6rem);
         background-color: aliceblue;
         color: black;
+    }
+
+}
+
+@media screen and (min-height: 864px) {
+
+    .sobre-nos-title {
+        font-size: clamp(1.4rem, 3vw, 3.8rem);
+    }
+
+    .sobre-nos-container {
+        gap: 4rem;
+        font-size: clamp(1.1rem, 2.5vw, 3rem);
+    }
+
+    .sobre-nos-links a {
+        font-size: clamp(1rem, 2vw, 2.4rem);
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-height: 961px) {
+    .sobre-nos-title {
+        font-size: clamp(1.4rem, 3vw, 4.4rem);
+    }
+
+    .sobre-nos-container {
+        gap: 5rem;
+        font-size: clamp(1.1rem, 2.5vw, 3.6rem);
     }
 
 }
