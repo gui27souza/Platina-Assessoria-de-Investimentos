@@ -84,12 +84,15 @@
     
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     
         gap: 2rem;
     
-        font-size: clamp(1rem, 2vw, 1.6rem);
         font-weight: 500;
+    }
+
+    .footer-title {
+        font-size: clamp(1.4rem, 1.5vw, 2.4rem);
     }
     
     .footer > * {
@@ -101,10 +104,6 @@
         text-align: center;
     }
     
-    .footer-text {
-        font-size: 1.8rem;
-    }
-
     .footer-endereco {
         all: unset;
     }
@@ -159,9 +158,93 @@
     }
     
     .footer-disclaimer {
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: justify;
         hyphens: auto;
+    }
+
+    .footer-subtitle {
+        font-size: clamp(2rem, 2vw, 3rem);
+    }
+
+    .footer-text {
+        font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+    }
+
+    .footer-info {
+        font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+    }
+    .footer-info img {
+        height: 3.6rem;
+        margin-right: .6rem;
+    }
+
+    .footer-ouvidoria span {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-height: 864px) {
+
+    .footer-title {
+        font-size: clamp(1.4rem, 3vw, 3.8rem);
+    }
+
+    .footer-subtitle {
+        font-size: clamp(2rem, 2.5vw, 3.4rem);
+    }
+
+    .footer-text {
+        font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+    }
+
+    .footer-info {
+        font-size: clamp(1.8rem, 2.5vw, 3rem);
+    }
+    .footer-info img {
+        height: 4rem;
+        margin-right: 1rem;
+    }
+
+    .footer-ouvidoria span {
+        font-size: 1.8rem;
+    }
+
+    .footer-disclaimer {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-height: 961px) {
+
+    .footer-title {
+        font-size: clamp(1.4rem, 3vw, 4.4rem);
+    }
+
+    .footer-subtitle {
+        font-size: clamp(2rem, 2.5vw, 4rem);
+    }
+
+    .footer-text {
+        font-size: clamp(1.8rem, 2.5vw, 3.6rem);
+    }
+
+    .footer-info {
+        font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+    }
+    .footer-info img {
+        height: 4.4rem;
+        margin-right: 1rem;
+    }
+
+    .footer-ouvidoria span {
+        font-size: 2rem;
+    }
+
+    .footer-disclaimer {
+        font-size: 1.6rem;
     }
 
 }
