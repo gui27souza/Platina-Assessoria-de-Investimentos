@@ -76,6 +76,8 @@
     .assessoria {
         height: 100%;
 
+        justify-content: space-around;
+
         max-width: 160rem;
         margin: auto;
     
@@ -84,17 +86,17 @@
     
     
     .assessoria-title {
-        font-size: clamp(1.4rem, 2vw, 2.4rem);
+        font-size: clamp(1.4rem, 1.5vw, 2.4rem);
     }
     
     .assessoria-subtitle {
-        font-size: clamp(1.1rem, 2vw, 2rem);
+        font-size: clamp(1.4rem, 1vw, 2rem);
     }
     
     .assessoria-container {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.6rem;
     }
 
     .assessoria-item:nth-of-type(8) {
@@ -108,8 +110,10 @@
     .assessoria-item {
         background-color: #23304b;
         color: aliceblue;
-        padding: 1.6rem;
+        padding: 1rem;
         border-radius: 1rem;
+
+        margin-top: 0;
 
         box-shadow: 0 0 2rem #0f182c;
 
@@ -130,20 +134,71 @@
     .assessoria-item h2 {
         border-bottom: none;
         
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 1vw, 1.8rem);
         font-weight: bold;
         text-align: center;
     }
     
     .assessoria-item span {
         display: inline-block;
-        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 1vw, 1.8rem);
         text-align: center;
         margin-top: 1rem;
     }
     
     .assessoria-links {
         align-self: center;
+    }
+    
+    .assessoria-links a {
+        font-size: clamp(1rem, 1vw, 1.6rem);
+    }
+
+}
+
+@media screen and (min-height: 864px) {
+
+    .assessoria-title {
+        font-size: clamp(1.4rem, 3vw, 3.8rem);
+    }
+    
+    .assessoria-subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 3rem);
+    }
+    
+    .assessoria-container {
+        gap: 2.4rem;
+    }
+
+    .assessoria-item {
+        padding: 2rem;
+    }
+
+    .assessoria-item h2 {
+        font-size: clamp(1.1rem, 2.5vw, 2.4rem);
+    }
+    
+    .assessoria-item span {
+        font-size: clamp(1.4rem, 2vw, 1.8rem);
+    }
+
+    .assessoria-links a {
+        font-size: clamp(1rem, 2vw, 2.4rem);
+    }
+}
+
+@media screen and (min-height: 961px) {
+
+    .assessoria-title {
+        font-size: clamp(1.4rem, 3vw, 4.4rem);
+    }
+
+    .assessoria-subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 3.6rem);
+    }
+
+    .assessoria-container {
+        gap: 3rem;
     }
 
 }
