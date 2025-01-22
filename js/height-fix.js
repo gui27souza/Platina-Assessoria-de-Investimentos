@@ -12,8 +12,9 @@ function heightFix() {
     const assessoria = document.getElementById('assessoria')
     const investimentos = document.getElementById('investimentos')
     const cambio = document.getElementById('cambio')
+    const footer = document.getElementById('footer')
 
-    let elementos = [main, sobre_nos, assessoria, investimentos, cambio]
+    let elementos = [main, sobre_nos, assessoria, investimentos, cambio, footer]
 
     if (window.innerWidth >= 1279) {
         elementos.forEach(element => {
