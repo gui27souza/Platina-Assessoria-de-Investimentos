@@ -125,7 +125,7 @@
 
         text-align: center;
 
-        position: fixed;
+        position: sticky;
         top: 0;
     }
 
