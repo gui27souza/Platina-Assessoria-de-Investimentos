@@ -152,30 +152,38 @@
     
     .cambio {
         max-width: 160rem;
+
+        height: 100%;
+        justify-content: space-around;
     }
     
+    .cambio-title {
+        font-size: clamp(1.4rem, 1.5vw, 2.4rem);
+    }
+
     .cambio-subtitle {
-        font-size: clamp(1.1rem, 2vw, 2rem);
-        padding-left: 1rem;
+        font-size: clamp(1.5rem, 1vw, 2rem);
     }
     
     .cambio-container {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     
+        gap: 1rem;
+
+        margin: 0;
+
         justify-content: center;
-    
-        padding: 0 1rem;
     }
     
     .cambio-item {
         display: grid;
-        grid-template-columns: 6rem 1fr;
-        grid-template-rows: 6rem 1fr ;
+        grid-template-columns: 4rem 1fr;
+        grid-template-rows: 4rem 1fr ;
         justify-content: space-between;
         gap: .8rem;
     
-        padding: 1.6rem;
+        padding: .6rem;
     
         border-radius: 1rem;
     
@@ -199,10 +207,14 @@
     }
 
     .cambio-item-icon {
-        width: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .cambio-item-icon img {
+        
         filter: 
             drop-shadow(1px 1px aliceblue) 
             drop-shadow(-1px 1px aliceblue)
@@ -210,12 +222,12 @@
             drop-shadow(-1px -1px aliceblue)
         ;
 
-        height: 100%;
-        width: 100%;
+        height: unset;
     }
     
     .cambio-item h2 {
-        font-size: clamp(1.1rem, 2vw, 1.8rem);
+        font-size: clamp(1.6rem, 1vw, 1.8rem);
+
         align-self: center;
         text-align: left;
         display: flex;
@@ -226,7 +238,7 @@
     .cambio-item p {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
-        font-size: clamp(1.1rem, 2vw, 1.6rem);
+        font-size: clamp(1.3rem, 1vw, 1.8rem);
         hyphens: auto;
     }
     
@@ -236,8 +248,74 @@
     }
     
     .cambio-links a {
+        font-size: clamp(1rem, 1vw, 1.6rem);
         background-color: aliceblue;
         color: black;
+    }
+
+}
+
+@media screen and (min-height: 864px) {
+
+    .cambio-title {
+        font-size: clamp(1.4rem, 3vw, 3.8rem);
+    }
+    
+    .cambio-subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 2rem);
+    }
+    
+    .cambio-container {
+        gap: 2rem;
+    }
+
+    .cambio-item {
+        padding: 1.4rem;
+    }
+
+    .cambio-item h2 {
+        font-size: clamp(1.1rem, 2.5vw, 2rem);
+    }
+    
+    .cambio-item p {
+        margin-top: 1rem;
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
+    }
+
+    .cambio-links a {
+        font-size: clamp(1rem, 2vw, 2.4rem);
+    }
+}
+
+@media screen and (min-height: 961px) {
+
+    .cambio-title {
+        font-size: clamp(1.4rem, 3vw, 4.4rem);
+    }
+
+    .cambio-subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 3rem);
+    }
+
+    .cambio-container {
+        gap: 3rem;
+    }
+
+    .cambio-item {
+        padding: 1.8rem;
+    }
+
+    .cambio-item h2 {
+        font-size: clamp(1.1rem, 2.5vw, 2rem);
+    }
+    
+    .cambio-item p {
+        margin-top: 1rem;
+        font-size: clamp(1.4rem, 2vw, 1.8rem);
+    }
+
+    .cambio-links a {
+        font-size: clamp(1rem, 2vw, 2.4rem);
     }
 
 }
