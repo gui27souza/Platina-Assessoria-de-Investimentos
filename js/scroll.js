@@ -1,27 +1,31 @@
-function scrollNav() {
 
-    const nav_wrapper = document.getElementById('nav-wrapper')
+
+let nav_wrapper = document.getElementById('nav-wrapper')
+
+let nav_height = nav_wrapper.offsetHeight
+
+function scrollNavTo(element) {
+    const targetId = element.getAttribute('data-scroll')
+    const targetElement = document.getElementById(targetId)
     
-    let nav_height = nav_wrapper.offsetHeight
+    const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY
+    const offsetPosition = elementPosition - nav_height
     
-    function scrollNavTo(element) {
-        const targetId = element.getAttribute('data-scroll')
-        const targetElement = document.getElementById(targetId)
-        
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY
-        const offsetPosition = elementPosition - nav_height
-        
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth',
-        })
-    }
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+    })
+}
+
+function updateNavheight() {
+    nav_wrapper = document.getElementById('nav-wrapper')
+    nav_height = nav_wrapper.offsetHeight
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    scrollNav()
+    updateNavheight()
 })
 
 window.addEventListener("resize", () => {
-    scrollNav()
+    updateNavheight()
 })
