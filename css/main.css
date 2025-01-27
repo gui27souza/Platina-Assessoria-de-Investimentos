@@ -34,7 +34,7 @@
     font-weight: 800;
     color: aliceblue;
     width: 80%;
-    font-size: 4rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     text-align: center;
     text-transform: uppercase;
 }
@@ -114,11 +114,12 @@
     }
     
     .main-title h1 {
-        font-size: clamp(6rem, 2vw, 8rem);
+        font-size: clamp(4rem, 3vw, 6rem);
         align-self: left;
 
+        width: 100%;
+
         position: relative;
-        top: 5rem;
 
         filter: 
             drop-shadow(.4rem .4rem 0 rgb(41, 62, 100))
@@ -169,7 +170,7 @@
             center left
         ;        
         background-size: 
-            40% 250px,
+            30% 15rem,
             200px 100%,
             40% 200px,
             200px 100%
