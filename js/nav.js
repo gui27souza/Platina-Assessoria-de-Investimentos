@@ -6,6 +6,7 @@ const nav_closer = document.getElementById('nav-closer')
 let header_is_open = true
 
 function header() {
+
     if (header_is_open) {
         nav_closer.style.display = 'none'
         header_nav.style.bottom = '120rem'
@@ -26,16 +27,16 @@ function headerNavSize() {
     header_nav.style.bottom = header_nav_size*(-1) + 'px'
 }
 
-window.addEventListener('resize', function(event) {
-    if (window.innerWidth >= 768) {
-        header_is_open = true
-        header()
-    } 
-}, true)
+window.addEventListener('resize', () => {
+    nav_closer.style.display = 'none'
+    header_nav.style.bottom = '120rem'
+    menu_animation.style.transform = 'rotate(90deg)'
+    header_is_open = false
+})
 
-window.addEventListener("load", (event) => {
-    if (window.innerWidth <= 768) {
-        headerNavSize()
-        header()
-    }
+window.addEventListener("load", () => {
+    nav_closer.style.display = 'none'
+    header_nav.style.bottom = '120rem'
+    menu_animation.style.transform = 'rotate(90deg)'
+    header_is_open = false
 })
