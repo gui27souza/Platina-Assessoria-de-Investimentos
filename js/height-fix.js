@@ -1,11 +1,9 @@
+// Function that manages the height of the sections based on the nav height
 function heightFix() {
     let window_height = window.innerHeight
-    console.log("Altura da janela:", window_height)
 
     const nav = document.getElementById('nav-wrapper')
-
     const nav_height = nav.offsetHeight
-    console.log("Altura do nav:", nav_height)
 
     const main = document.getElementById('main')
     const sobre_nos = document.getElementById('sobre-nos')
@@ -24,10 +22,10 @@ function heightFix() {
     }
 }
 
+// The function is called whether the page is loaded or its size is changed
 document.addEventListener("DOMContentLoaded", () => {
     heightFix()
 })
-
 window.addEventListener("resize", () => {
     heightFix()
 })

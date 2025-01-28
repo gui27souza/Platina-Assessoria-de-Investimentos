@@ -1,7 +1,8 @@
-const main_section = document.getElementById('main-section')
-
+// Function that gives the main section background a moving effect
 function heroBackgroundEffect() {
-
+    
+    const main_section = document.getElementById('main-section')
+    
     let min = -20000
     let max = 20000
     let rand1 = Math.floor(Math.random() * (max - min + 1)) + min
